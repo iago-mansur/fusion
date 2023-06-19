@@ -68,3 +68,9 @@ docker-compose up
 http://127.0.0.1:8000/
 
 docker-compose down
+
+Editar core.models.py, admin.py, core.views.py
+
+Criar core.forms.py
+
+Editar settings.py
