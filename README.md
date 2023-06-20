@@ -74,3 +74,32 @@ Editar core.models.py, admin.py, core.views.py
 Criar core.forms.py
 
 Editar settings.py
+
+
+sudo chmod 666 /var/run/docker.sock
+
+docker-compose build
+
+docker-compose run --rm app sh -c "pip install model_mommy coverage"
+
+pip freeze
+
+atualizar requirements.txt
+
+coverage run manage.py test
+
+coverage report
+
+coverage html
+
+cd htmlcov
+
+python -m http.server
+
+rm -rf htmlcov
+
+coverage run manage.py test
+
+cd htmlcov
+
+python -m http.server
